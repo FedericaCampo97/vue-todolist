@@ -18,3 +18,16 @@ i{
     margin-left: 20px;
     cursor: pointer;
 }
+input {
+    margin-top: 30px;
+    padding: 10px;
+}
+button{
+    margin: 30px 20px;
+    padding: 13px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
