@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    padding: 50px;
+}
+.barrato {
+    
+    text-decoration: line-through;
+}
