@@ -7,7 +7,14 @@
 body{
     padding: 50px;
 }
+li{
+    margin-top: 5px;
+    font-size: 18px;
+}
 .barrato {
-    
     text-decoration: line-through;
+}
+i{
+    margin-left: 20px;
+    cursor: pointer;
 }

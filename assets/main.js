@@ -6,13 +6,19 @@ done, un booleano (true/false) che indica se il todo
 
 MILESTONE 1 Stampare all’interno di una lista 
 HTML un item per ogni todo. Se la proprietà done è
-uguale a true, visualizzare il testo del todo sbarrato.*/
+uguale a true, visualizzare il testo del todo sbarrato.
+
+Visualizzare a fianco ad ogni item ha una “x”: 
+cliccando su di essa, il todo viene rimosso dalla lista.
+
+
+*/
 
 const { createApp } = Vue
 const list = [
     {
         text: 'Fare la spesa',
-        done: true
+        done: true,
     }, 
     {
         text: 'Andare in palestra',
@@ -49,7 +55,13 @@ createApp({
        
     },
     methods: {
-        
+        deleteTask(i) {
+            this.list = this.list.filter((value,key) => {
+                if(key != i ) {
+                    return value
+                }
+            })
+        }
     },
     mounted() {
         this.list = list
